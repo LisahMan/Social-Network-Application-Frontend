@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+  <EditText
+     android:id="@+id/etlogusername"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:hint="Username"
+     android:layout_marginTop="20dp"/>
+
+  <EditText
+      android:id="@+id/etlogpassword"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Password"
+      android:inputType="textPassword"
+      android:layout_below="@id/etlogusername"
+      android:layout_marginTop="15dp"/>
+
+  <Button
+      android:id="@+id/btnlogin"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/button_design_bold"
+      android:text="login"
+      android:layout_below="@id/etlogpassword"
+      android:layout_marginTop="25dp"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"/>
+  <LinearLayout
+      android:layout_below="@id/btnlogin"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="2"
+      android:orientation="horizontal"
+      android:layout_marginTop="30dp">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Not a Member? "
+          android:textSize="20dp"
+          android:layout_weight="1"
+          android:layout_marginLeft="20dp"/>
+
+      <Button
+          android:id="@+id/btngotoregister"
+          android:background="@drawable/button_design"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Register"
+          android:layout_marginRight="5dp"
+          />
+
+
+  </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtfollowing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Following"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+      />
+<android.support.v7.widget.RecyclerView
+    android:layout_marginTop="10dp"
+    android:id="@+id/recviewfollowing"
+    android:layout_below="@id/txtfollowing"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+</RelativeLayout>

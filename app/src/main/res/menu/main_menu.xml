@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/search"
+        android:title="search"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:icon="@drawable/search"
+        app:showAsAction="always"
+        />
+
+    <item android:id="@+id/userpost"
+        android:title="Posts"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/userfollowing"
+        android:title="Following"
+        app:showAsAction="never"/>
+    <item android:id="@+id/userSavedPost"
+        android:title="Saved Post"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/logout"
+        android:title="Log Out"
+        app:showAsAction="never"
+        />
+
+</menu>

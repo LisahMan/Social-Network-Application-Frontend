@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <TextView
+        android:id="@+id/txtappname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SOCIAL NETWORKING APP"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnenterlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtappname"
+        android:background="@drawable/button_design"
+        android:text="LOGIN"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="120dp"/>
+    <Button
+        android:id="@+id/btnenterregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnenterlogin"
+        android:background="@drawable/button_design"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="REGISTER"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"/>
+
+
+
+</RelativeLayout>

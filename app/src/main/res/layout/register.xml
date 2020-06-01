@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etregusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Username"/>
+
+    <EditText
+        android:id="@+id/etregmobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etregusername"
+        android:layout_marginTop="15dp"
+        android:hint="Mobile Number"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/etregpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etregmobile"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+    <EditText
+        android:id="@+id/etregrepassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etregpassword"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"/>
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design_bold"
+        android:layout_below="@id/etregrepassword"
+        android:layout_marginTop="25dp"
+        android:text="Register"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <LinearLayout
+        android:layout_below="@id/btnregister"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already a member"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btngotologin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_design"
+            android:layout_weight="1"
+            android:text="login"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+</RelativeLayout>
